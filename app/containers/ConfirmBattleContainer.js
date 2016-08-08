@@ -1,5 +1,6 @@
 var React = require('react');
 var ConfirmBattle = require('../components/ConfirmBattle');
+var githubHelpers = require('../utils/githubHelpers');
 
 var ConfirmBattleContainer = React.createClass({
   contextTypes: {
@@ -13,11 +14,11 @@ var ConfirmBattleContainer = React.createClass({
     }
   },
   componentWillMount: function () {
-    console.log('componentWillMount')  
+    console.log('componentWillMount'); 
   },
   componentDidMount: function () {
     var query = this.props.location.query;
-    console.log('componentDidMount')  
+    console.log('componentDidMount'); 
     // Fetch info from github then update state
   },
   componentWillReceiveProps: function (){
